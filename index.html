@@ -1,0 +1,137 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Canvas Demo</title>
+	<script src="BouncingBall.js"></script>
+	<script src="GameScene.js"></script>
+	<script src="ChangingScene.js"></script>
+	<script src="Smoke.js"></script>
+  </head>
+	
+	<body onload="gameSetup();">
+tunnu
+	<div id="canvasesdiv" style="position:relative; width:1000px; height:600px">
+	  
+	  <canvas onclick="clearText()" id="canvas0" style="z-index: 1;  position:absolute; left:0px; top:0px;" width="1000" height="600" style="border:1px solid #f8c1c1;">
+	  </canvas>
+	  <canvas onclick="clearText()" id="canvas" style="z-index: 2;  position:absolute; left:0px; top:0px;" width="1000" height="600" style="border:1px solid #f8c1c1;">
+      </canvas>
+	  <canvas onclick="clearText()" id="canvas2" style="z-index: 3;  position:absolute; left:0px; top:0px;" width="1000" height="600" style="border:1px solid #f8c1c1;">
+	  </canvas>
+	  <canvas onclick="clearText()" id="canvas3" style="z-index: 4;  position:absolute; left:0px; top:0px;" width="1000" height="600" style="border:1px solid #f8c1c1;">
+	  </canvas>
+	  <canvas onclick="clearText()" id="canvas4" style="z-index: 5;  position:absolute; left:0px; top:0px;" width="1000" height="600" style="border:1px solid #f8c1c1;">
+	  </canvas>
+	  <canvas onclick="clearText()" id="canvas5" style="z-index: 6;  position:absolute; left:0px; top:0px;" width="1000" height="600" style="border:1px solid #f8c1c1;">
+	  </canvas>
+	  <canvas onclick="clearText()" id="canvas6" style="z-index: 7;  position:absolute; left:0px; top:0px;" width="1000" height="600" style="border:1px solid #f8c1c1;">
+	  </canvas>
+	  <canvas onclick="clearText()" id="canvas7" style="z-index: 8;  position:absolute; left:0px; top:0px;" width="1000" height="600" style="border:1px solid #e9e9e9;">
+	</canvas>
+	</div>
+
+	<img src="Kindeva.png" id="KindevaLogo" style="display:none"/>
+	<img src="CloudMove.png" id="CloudMove" style="display:none"/>
+	<img src="CloudMove2.png" id="CloudMove2" style="display:none"/>
+	<img src="CloudMove3.png" id="CloudMove3" style="display:none"/>
+	<img src="Cloud1.jpg" id="Cloud1" style="display:none"/>
+	<img src="Cloud2.jpg" id="Cloud2" style="display:none"/>
+	<img src="Cloud3.jpg" id="Cloud3" style="display:none"/>
+	<img src="Cloud4.jpg" id="Cloud4" style="display:none"/>
+	<img src="Cloud5.jpg" id="Cloud5" style="display:none"/>
+	<img src="Cloud6.jpg" id="Cloud6" style="display:none"/>
+    <img src="bar.png" id="bar" style="display:none"/>
+	<img src="Demon.png" id="devilDance" style="display:none"/>
+	<img src="DemonDead.png" id="devilDead" style="display:none"/>
+	<img src="Ninja.png" id="Ninja" style="display:none"/>
+
+	<img src="coin.png" id="Gold" style="display:none"/>
+	<img src="portal.png" id="portal" style="display:none"/>
+	<img src="Cart.png" id="Cart" style="display:none"/>
+	<img src="CartOpen.png" id="CartOpen" style="display:none"/>
+
+	<img src="Logo.png" id="Logo1" style="display:none"/>
+	<img src="Nike.png" id="Logo2" style="display:none"/>
+	<img src="LogoVertical.png" id="Logo3" style="display:none"/>
+
+	<img src="S1.png" id="S1" style="display:none"/>
+	<img src="S2.png" id="S2" style="display:none"/>
+	<img src="S3.png" id="S3" style="display:none"/>
+	<img src="S4.png" id="S4" style="display:none"/>
+	<img src="S5.png" id="S5" style="display:none"/>
+	<img src="S6.png" id="S6" style="display:none"/>
+	<img src="S7.png" id="S7" style="display:none"/>
+	<img src="S8.png" id="S8" style="display:none"/>
+	<img src="S9.png" id="S9" style="display:none"/>
+	<img src="S10.png" id="S10" style="display:none"/>
+	<img src="S11.png" id="S11" style="display:none"/>
+	<img src="S12.png" id="S12" style="display:none"/>
+	<img src="S13.png" id="S13" style="display:none"/>
+	<img src="S14.png" id="S14" style="display:none"/>
+	<img src="S15.png" id="S15" style="display:none"/>
+	<img src="S16.png" id="S16" style="display:none"/>
+	<img src="S17.png" id="S17" style="display:none"/>
+	<img src="S18.png" id="S18" style="display:none"/>
+	<img src="S19.png" id="S19" style="display:none"/>
+	<img src="S20.png" id="S20" style="display:none"/>
+	<img src="S21.png" id="S21" style="display:none"/>
+	<img src="S22.png" id="S22" style="display:none"/>
+	<img src="S23.png" id="S23" style="display:none"/>
+	<img src="S24.png" id="S24" style="display:none"/>
+	<img src="S25.png" id="S25" style="display:none"/>
+	<img src="S26.png" id="S26" style="display:none"/>
+	<img src="S27.png" id="S27" style="display:none"/>
+	<img src="S28.png" id="S28" style="display:none"/>
+	<img src="S29.png" id="S29" style="display:none"/>
+	<img src="S30.png" id="S30" style="display:none"/>
+
+	<img src="Sm0.png" id="Sm0" style="display:none"/>
+	<img src="Sm1.png" id="Sm1" style="display:none"/>
+	<img src="Sm2.png" id="Sm2" style="display:none"/>
+	<img src="Sm3.png" id="Sm3" style="display:none"/>
+	<img src="Sm4.png" id="Sm4" style="display:none"/>
+	<img src="Sm5.png" id="Sm5" style="display:none"/>
+
+
+	<img src="Crack1.png" id="CL" style="display:none"/>
+	<img src="Crack2.png" id="CR" style="display:none"/>
+	<img src="Crack3.png" id="CT" style="display:none"/>
+
+
+	<div>
+		<label for="Speed">Speed</label>
+		<input onchange="DrawGuide()" type="range" id="Speed" name="Speed"
+			   min="0" max="1500" step="10" size="200">
+		
+		<label for="Angle">Angle</label>
+		<input onchange="DrawGuide()" type="range" id="Angle" name="Angle"
+			   min="0" max="3.14" step="0.02" size="200">
+
+		<label for="cars">Pick your level:</label>
+
+		<select onchange="listQ()" name="level" id="level">
+		 <option value="1">Level 1</option>
+		 <option value="2">Level 2</option>
+		 <option value="3">Level 3</option>
+		 <option value="4">Level 4</option>
+		 <option value="5">Level 5</option>
+		 <option value="6">Level 6</option>
+		 <option value="7">Level 7</option>
+		 <option value="8">Level 8</option>
+		 <option value="9">Level 9</option>
+		 <option value="10">Level 10</option>
+		 <option value="11">Level 11</option>
+		 <option value="12">Level 12</option>
+		 <option value="13">Level 13</option>
+		</select>
+		
+
+		<input onclick="ReadInputs();" type="button" id="Shoot" name="Shoot" Value="Shoot">
+		<input onclick="Hook();" type="button" id="hook" name="Hook" Value="Hook">
+		<input onclick="Buy();" type="button" id="Buy" name="Buy" Value="Buy">
+		
+	  </div>	
+
+  </body>
+</html>
