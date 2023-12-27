@@ -1,8 +1,8 @@
 {
   "include_files": [
     "**/*.mp3", // Include all MP3 files from the app_location
-    "**/*.ico", // Include all MP3 files from the app_location
-    "**/*.png", // Include all MP3 files from the app_location
-    "**/*.jpg"  // Include all MP3 files from the app_location
+    "**/*.ico", // Include all ICO files from the app_location
+    "**/*.png", // Include all PNG files from the app_location
+    "**/*.jpg"  // Include all JPG files from the app_location
   ]  
 }
